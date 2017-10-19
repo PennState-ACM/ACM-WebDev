@@ -1,0 +1,67 @@
+
+<!DOCTYPE HTML> 
+<html lang=en> 
+<head> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <style> 
+    h1{
+        font-size: 30px;
+        color:white;
+    }
+    .hello{
+        background-color: black;
+    }
+	#text{
+		text-align: center;
+	}
+	img{
+		width:100%;
+	}
+    </style> 
+</head>
+
+<body>
+    <header>
+	    <div class="hello">
+            <h1 id="text">Hello World! My name is David</h1>
+        </div >
+    </header>
+    <article>
+		<div class="container">
+			<div class="row">
+				<!--Images-->
+				<div class="col-md-4">
+					<img src="http://www.vitamin-ha.com/wp-content/uploads/2013/08/Random-Funny-Pictures-10.jpg" alt="bby">
+				</div>
+				<div class="col-md-4">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Saquon_Barkley_Rose_Bowl_Touchdown_Antonella_Crescimbeni.jpg" alt="26">
+				</div>
+				<div class="col-md-4">
+					<img src="https://www.eduonix.com/aDmiN_050716/public/uploads/headerimages/20170301155447.jpg" alt="web">
+				</div>
+			</div>
+			<div class="row">
+				<!--Button-->
+				<div class="col-md-4">
+				</div>
+				<div class="col-md-4">
+					<textarea id="name" placeholder="Write your Name"></textarea>
+					<button class="button" type="button" onclick="changeName()">Change</button>
+				</div>
+				<div class="col-md-4">
+				</div>
+			</div>
+		</div>
+    </article>
+    <script>
+        function changeName()
+        {
+            let textArea = document.getElementById("name").value;
+            document.getElementById("text").innerHTML= "Hello World! My name is ".concat(textArea);
+        }
+    </script>
+    <footer>
+    </footer>
+</body>
+
+</html>
